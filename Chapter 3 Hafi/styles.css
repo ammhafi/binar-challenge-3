@@ -1,0 +1,679 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.navigasi {
+    width: 100%;
+    min-height: 4.5rem;
+    background-color: #000000;
+    opacity: 80%;
+    position: absolute;
+    top: 0;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+ }
+ .navigasi-kiri {
+    margin-left: -10rem;
+ }
+ .navigasi-kanan {
+    margin-right: 8rem;
+ }
+ .navigasi-kanan .burger {
+    display: flex;
+ }
+
+.logo {
+    height: 50%;
+    width: 10%;
+    margin-left: 7rem;
+}
+.link-situs {
+   text-align: right;
+}
+.link-situs {
+    color: #FFFFFF;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 800;
+    font-family: 'Open Sans';
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 1.25rem;
+    letter-spacing: 1px;
+}
+.link-situs:hover {
+    color: rgb(230, 166, 29);
+    text-decoration: none;
+}
+.link-situs:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.home {
+    background-image: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%), url(bg\ image\ 1.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home h1 {
+    color: #FFFFFF;
+    font-family: 'Bebas Neue';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 5rem;
+    letter-spacing: 5px;
+    margin-bottom: 2.5rem;
+    margin-top: 1.25rem;  
+}
+
+.home p {
+    color: #FFFFFF;
+    font-family: 'Open Sans';  
+    font-size: 1.5rem;
+    margin-bottom: 4.75rem;
+    letter-spacing: 1.5px;
+}
+
+.tombol {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgb(230, 166, 29);
+    border: none;
+    height: 3.125rem;
+    width: 13.75rem;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+}
+.tombol:hover {
+    background-color: rgb(177, 121, 0)
+}
+
+.panah-cerita {
+    position: absolute;
+    bottom: 2.5rem;
+}
+
+.panah-cerita a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: tunjuk 1s linear infinite;
+}
+.panah-cerita p {
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: -0.3125rem;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+}
+
+.bi-caret-down {
+    color:#FFFFFF;
+}
+
+@keyframes tunjuk {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+.gallery {
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%), url(bg\ image\ 2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-slideshow-gambar {
+    position: absolute;
+    top: calc(100vh + 6rem);
+    right: 8.125rem;
+    width: 42.875rem;
+    height: 23.875rem;
+    margin-top: 3.125rem;
+}
+.rounded-circle {
+    width: 10px !important; /*darurat pake !important karena ini elemen bootstrap*/
+    height: 10px !important;
+    border-radius: 10px !important;
+}
+
+.gallery-penjelasan {
+    margin-top: -18.75rem;
+    width: 22.6875rem;
+    height: 6.5625rem;
+    position: absolute;
+    top: calc(100vh + 22.5rem);
+    left: 9.625rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-penjelasan p {
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    letter-spacing: 1.5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.gallery-penjelasan h2 {
+    color:#FFFFFF;
+    font-size: 5rem;
+    font-family: 'Bebas Neue';
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 4rem;
+}
+
+.features {
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url(bg\ image\ 3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    display: flex;
+    flex-direction: column;
+}
+
+.features-head {
+    width: 100%;
+    height: 6.5625rem;
+    margin: 10% 0% 0% 60%;
+}
+
+.features-head h3 {
+    color: #FFFFFF;
+}
+
+.features-head h2 {
+    color:#FFFFFF;
+    font-size: 5rem;
+    font-family: 'Bebas Neue';
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 4rem;
+    margin-top: 1.25rem;
+}
+
+.features-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.features-list-style {
+    width: 1.25rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 42%;
+    margin-right: 2rem;
+}
+.dot-panjang {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+.garis-ke-bawah {
+    width: 2px;
+    height: 142px;
+    border: 1px solid #FFFFFF;
+}
+.dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+.dot-2 {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-top: 56px;
+}
+.putih {
+    background-color: #FFFFFF;
+}
+.transparan {
+    border: 2px solid #FFFFFF;
+}
+.features-list {
+    width: 21.875rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.25rem;
+    justify-content: space-around;
+}
+.features-list .game-suit {
+    margin-top: 45px;
+}
+.features-list .tbd {
+    margin-top: 17px;
+}
+.features-list .body {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.features-list .sub-text {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.body {
+    color:rgb(230, 166, 29);
+    font-family: 'Open Sans';
+}
+.sub-text {
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+}
+.system-req {
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%), url(bg\ image\ 4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.system-req-header {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.system-req-header p {
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+
+.system-req-title {
+    width: 20%;
+    margin-left: 10%;
+    margin-bottom: 3%;
+}
+
+.system-req-title h2 {
+    color: #FFFFFF;
+    font-size: 5rem;
+    font-family: 'Bebas Neue';
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 4rem;
+}
+
+table{
+    margin-left: 10%;
+    width: 40%;
+    font-family: 'Open Sans';
+}
+
+table th, table td {
+    border: 1px solid grey;
+  }
+
+table td .sub-text {
+    margin-top: -1rem;
+}
+
+table td .body {
+    padding-top: 0.8rem;
+}
+
+table td .sub-text, table td .body {
+    padding-left: 0.8rem;
+}
+
+.top-score {
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(35, 15, 15, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%), url(/bg\ image\ 5.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-score-title {
+    margin-left: 7%;
+    width: 40%;
+}
+
+.top-score-title h2 {
+    color: #FFFFFF;
+    font-size: 5rem;
+    font-family: 'Bebas Neue';
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.top-score-title p {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-family: 'Open Sans';
+    margin-bottom: 30px;
+}
+
+.see-more {
+    text-transform: lowercase;
+}
+
+.top-score-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    width: 40%;
+    overflow: hidden;
+    margin-right: 10%;
+}
+
+.top-score-user-kanan {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.top-score-user-kiri {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.user-box {
+    width: 80%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.08); ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.user-box-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.user-box-header img {
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.user-box-header .body {
+    margin-bottom: -0.3rem;
+    margin-top: 0.5rem;
+}
+.abu-abu {
+    color: grey;
+}
+
+.user-box-header i{
+    margin: 1rem 1rem 0 0;
+    color: grey;
+}
+
+.user-box-header .user-akun {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 1rem;
+    margin-left: -40%;
+}
+
+.user-box-main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.footer {
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-main {
+    height: 95%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+.gambar-footer {
+    width: 50%;
+    height: 100%;
+    background-image: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%), url(/image.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 10%;
+}
+
+.penjelasan-footer {
+    margin: 5% 15% 20% 10%; 
+}
+
+.penjelasan-footer .title-body {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    font-family: 'Open Sans';
+    letter-spacing: 0.1rem;
+}
+
+.penjelasan-footer h2 {
+    color: #FFFFFF;
+    font-size: 5rem;
+    font-family: 'Bebas Neue';
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 4rem;
+}
+
+.registrasi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 8%;
+}
+
+.input {
+    width: 57.5%;
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+}
+
+.input p {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    margin-left: 5%;
+    margin-top: 0.5%;
+}
+
+.input input {
+    height: 4%;
+    width: 90%;
+    border: none;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    background-color: inherit;
+    color: rgb(177, 121, 0)
+}
+
+::placeholder {
+    color: rgb(177, 121, 0);
+}
+
+.registrasi .tombol {
+    text-transform:none;
+}
+
+.footer-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 14%;
+}
+
+footer {
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding-top: 1%;
+    padding-right: 14%;
+    padding-left: 14%;
+    border-top: 1px solid grey;
+}
+
+
+/* Lebar Layar di bawah 600px */
+@media only screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html, body {
+        max-width: 100vw;
+    }
+
+    .navigasi {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 7rem;
+    }
+    .navigasi-kiri, .navigasi-kanan {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigasi-kiri {
+        margin-left: 30px;
+    }
+
+    .navigasi-kanan {
+        margin-left: 20px;
+        margin-right: -10px;
+    }
+
+    .navigasi-kiri .link-situs{ 
+        text-align: center;   
+    }
+
+    .navigasi .logo {
+        margin-left: 0;
+        width: 20%;
+    }
+    .home h1 {
+        width: 100%;
+        padding-top: 10%;
+        font-size: 3rem;
+        margin-bottom: 3.5625rem;
+        text-align: center;
+    }
+    .home p {
+        text-align: center;
+    }
+
+    .gallery-penjelasan{
+        transform: scale(0.5);
+        right: 10px;
+        left: 20px;
+    }
+    .gallery-slideshow-gambar {
+        transform: scale(0.4);
+        left: 20px;
+        margin-left: -175px;
+    }
+    .features-list {
+        margin-right: 10%;
+    }
+
+    .features-head h2, .features-head h3 {
+        margin-left: -27%;
+    }
+    .system-req-title h2{
+        font-size: 3rem;
+    }
+    .top-score-title h2{
+        font-size: 2rem;
+        width: 30%;
+    }
+    .top-score-title button {
+        width: 80%;
+    }
+    .user-box-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .user-box-header img{
+        display: none;
+    }
+    .user-akun {
+        margin-right: -90px;
+    }
+}
